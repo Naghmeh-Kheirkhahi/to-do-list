@@ -1,0 +1,51 @@
+https://www.w3schools.com/js/js_datatypes.asp
+
+https://www.w3schools.com/js/js_functions.asp
+
+https://www.w3schools.com/js/js_objects.asp
+
+https://www.w3schools.com/js/js_events.asp
+
+https://www.w3schools.com/jsref/met_document_addeventlistener.asp
+
+https://www.w3schools.com/jsref/met_document_createelement.asp
+
+https://www.w3schools.com/js/js_strings.asp  
+
+https://www.w3schools.com/js/js_numbers.asp 
+
+https://www.w3schools.com/js/js_arrays.asp   
+
+https://www.w3schools.com/js/js_dates.asp
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Sort</h2>
+<p>Sort the array in ascending order:</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+const points = [{name: 'Aslan' , age: 30}, {name: 'Amir' , age: 20}, {name: 'Ali' , age: 15}];
+let html=''
+
+for (let i=0 ; i<points.length ; i++){
+html+= points[i].name + ' is ' + points[i].age + ' years old.';
+}
+
+html+='<br> sort <br>'
+points.sort(function(a, b){return a.age - b.age});
+for (let i=0 ; i<points.length ; i++){
+html+= points[i].name + ' is ' + points[i].age + ' years old.';
+}
+
+document.getElementById("demo2").innerHTML = html
+</script>
+
+</body>
+</html>
